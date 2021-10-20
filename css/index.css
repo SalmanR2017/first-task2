@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Airbnb Cereal App", sans-serif;
+  font-weight: normal;
+  background-color: whitesmoke;
+}
+.logo {
+  width: 200px;
+  margin: auto;
+}
+h2 {
+  font-size: 28px;
+}
+
+.row {
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px 40px 20px;
+  box-sizing: border-box;
+  box-shadow: gray;
+  border-radius: 15px;
+}
+
+.email,
+.password {
+  font-size: 12px;
+  font-weight: bold;
+}
+.email-input,
+.password-input {
+  width: 100%;
+  border: 0.5px solid #e6dede;
+  padding: 10px;
+  border-radius: 5px;
+}
+.failed {
+  width: 100%;
+  background-color: #f1b4bd;
+  font-size: 15px;
+  color: #70161e;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #1c448e;
+}
+.last {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+input::placeholder {
+  color: rgb(228, 218, 218);
+  font-size: 12px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(211, 234, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+input[type="checkbox"]:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  color: skyblue;
+  display: none;
+}
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+.muted {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    padding: 10px 10px 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 600px) {
+    .row {
+      width: 100%;
+    }
+  }
+}
